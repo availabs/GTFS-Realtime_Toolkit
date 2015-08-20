@@ -4,7 +4,7 @@
 
 
 var fs         = require('fs'),
-    feedReader = require('../lib/GTFS-Realtime_FeedReader').newFeedReader(),
+    feedReader = require('../lib/FeedReader').newFeedReader(),
     config     = require('./config');
 
 

@@ -3,7 +3,7 @@
 'use strict';
 
 
-var feedReader = require('../lib/GTFS-Realtime_FeedReader').newFeedReader(),
+var feedReader = require('../lib/FeedReader').newFeedReader(),
     _          = require('lodash'),
 
     config     = require('./config');
