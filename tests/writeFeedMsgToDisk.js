@@ -4,11 +4,11 @@
 
 
 var fs         = require('fs'),
-    feedReader = require('../lib/GTFS-Realtime_FeedReader'),
-    key        = require('./mtaAPIKey');
+    feedReader = require('../lib/GTFS-Realtime_FeedReader').newFeedReader(),
+    config     = require('./config');
 
 
-feedReader.configure({ apiKey: key, });
+feedReader.configure(config);
 feedReader.registerListener(listener);
 
 

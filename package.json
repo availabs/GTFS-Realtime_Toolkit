@@ -1,13 +1,9 @@
 {
-  "name": "MTA_Subway_GTFS-Realtime_Toolkit",
+  "name": "GTFS-Realtime_Toolkit",
   "private": true,
   "version": "0.0.0",
-  "description": "Reads the NYCT Subway's GTFS-Realtime feed, converting the protobuf message to JSON. Offers a layer of abtraction through an indexed JS object with accessor functions for message data.",
+  "description": "Reads a GTFS-Realtime feed, converting the protobuf message to JSON. Offers a layer of abtraction through an indexed JS object with accessor functions for message data.",
   "keywords": [
-    "NYC",
-    "NYCT",
-    "MTA",
-    "Subway",
     "GTFS-Realtime"
   ],
   "dependencies": {
@@ -18,7 +14,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/availabs/MTA_Subway_GTFS-Realtime_Toolkit.git"
+    "url": "git://github.com/availabs/GTFS-Realtime_Toolkit.git"
   },
   "author": "paultomchik",
   "license": ""
