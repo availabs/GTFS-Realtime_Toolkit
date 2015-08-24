@@ -3,12 +3,15 @@
 'use strict';
 
 
+// This script's purpose is to help in debugging.
+
 var fs         = require('fs'),
-    feedReader = require('../lib/FeedReader').newFeedReader(),
-    config     = require('./config');
+    FeedReader = require('../lib/FeedReader'),
+    config     = require('./config'),
+
+    feedReader = new FeedReader(config);
 
 
-feedReader.configure(config);
 feedReader.registerListener(listener);
 
 

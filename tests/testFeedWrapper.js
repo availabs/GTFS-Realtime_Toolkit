@@ -3,17 +3,16 @@
 'use strict';
 
 
-var feedReader = require('../lib/FeedReader').newFeedReader(),
-    wrapper    = require('../lib/Wrapper'),
-    config     = require('./config');
+var FeedReader = require('../lib/FeedReader'),
+    Wrapper    = require('../lib/Wrapper'),
+    config     = require('./config'),
 
+    feedReader = new FeedReader(config);
 
-feedReader.configure(config);
 feedReader.registerListener(listener);
 
-
 function listener (msg) {
-    var obj = wrapper.newGTFSRealtimeObject(msg);
+    var obj = new Wrapper(msg);
 
     console.log(JSON.stringify(obj, null, '    '));
 }

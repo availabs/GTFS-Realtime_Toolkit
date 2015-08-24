@@ -3,13 +3,14 @@
 'use strict';
 
 
-var feedReader = require('../lib/FeedReader').newFeedReader(),
+var FeedReader = require('../lib/FeedReader'),
     _          = require('lodash'),
 
-    config     = require('./config');
+    config     = require('./config'),
+
+    feedReader = new FeedReader(config);
 
 
-feedReader.configure(config);
 feedReader.registerListener(listener);
 
 

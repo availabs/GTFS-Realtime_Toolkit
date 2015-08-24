@@ -3,13 +3,14 @@
 'use strict';
 
 
-var fs         = require('fs')                                ,
-    feedReader = require('../lib/FeedReader').newFeedReader() ,
-    wrapper    = require('../lib/Wrapper')                    ,
-    config     = require('./config')                          ;
+var fs         = require('fs')                ,
+    FeedReader = require('../lib/FeedReader') ,
+    Wrapper    = require('../lib/Wrapper')    ,
+    config     = require('./config')          ,
+
+    feedReader = new FeedReader(config)       ;
 
 
-feedReader.configure(config);
 feedReader.registerListener(listener);
 
 
@@ -18,7 +19,7 @@ function listener (msg) {
     
     feedReader.stop();
 
-    obj = wrapper.newGTFSRealtimeObject(msg);
+    obj = new Wrapper(msg);
 
     fs.writeFile('Wrapped_GTFS-Realtime_Sample.json', JSON.stringify(obj, null, '    '));
 }
