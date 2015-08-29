@@ -4,7 +4,7 @@ jest.autoMockOff();
 describe('Simple GTFS-Realtime Wrapper Tests.', function() {
     it('Build a wrapper from the sample message.', function() {
         var FeedReader = require('../lib/FeedReader.js'),
-            config     = require('./.config.js'),
+            config     = require('./.feedReaderConfig.js'),
             feedreader = new FeedReader(config);
         
         function listener (msg) {

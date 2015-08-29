@@ -7,6 +7,6 @@
 
 module.exports = {
     Wrapper             : require('./lib/Wrapper')             ,
+    WrapperStream       : require('./lib/WrapperStream')       ,
     FeedReader          : require('./lib/FeedReader')          ,
-    ObjectStreamFactory : require('./lib/ObjectStreamFactory') ,
 };
