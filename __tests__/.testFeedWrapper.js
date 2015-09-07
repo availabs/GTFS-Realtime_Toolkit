@@ -10,10 +10,11 @@ var FeedReader = require('../lib/FeedReader'),
     feedReader = new FeedReader(config);
 
 feedReader.registerListener(listener);
-feedReader.start();
 
 function listener (msg) {
     var obj = new Wrapper(msg);
+
+    feedReader.removeListener(listener);
 
     console.log(JSON.stringify(obj, null, '    '));
 }

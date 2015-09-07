@@ -6,7 +6,6 @@
  */
 
 module.exports = {
-    Wrapper             : require('./lib/Wrapper')             ,
-    WrapperStream       : require('./lib/WrapperStream')       ,
-    FeedReader          : require('./lib/FeedReader')          ,
+    Wrapper    : require('./lib/Wrapper')    ,
+    FeedReader : require('./lib/FeedReader') ,
 };

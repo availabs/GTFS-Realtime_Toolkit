@@ -12,13 +12,12 @@ var fs         = require('fs')                     ,
 
 
 feedReader.registerListener(listener);
-feedReader.start();
 
 
 function listener (msg) {
     var obj;
     
-    feedReader.stop();
+    feedReader.removeListener(listener);
 
     obj = new Wrapper(msg);
 

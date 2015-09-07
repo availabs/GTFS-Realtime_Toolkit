@@ -12,10 +12,10 @@ var FeedReader = require('../lib/FeedReader'),
 
 
 feedReader.registerListener(listener);
-feedReader.start();
 
 
 function listener (msg) {
+    feedReader.removeListener(listener);
     console.log(_.filter(_.pluck(msg.entity, 'trip_update.trip.trip_id')));
 }
 
