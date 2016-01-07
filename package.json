@@ -8,10 +8,8 @@
   ],
   "dependencies": {
     "lodash": "^3.10.1",
+    "moment-timezone": "^0.5.0",
     "protobufjs": "^4.0.0"
-  },
-  "scripts": {
-    "test" : "jest"
   },
   "main": "index.js",
   "repository": {
@@ -19,5 +17,9 @@
     "url": "git://github.com/availabs/GTFS-Realtime_Toolkit.git"
   },
   "author": "paultomchik",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+      "jest": "^0.1.40",
+      "jest-cli": "^0.4.x"
+  }
 }

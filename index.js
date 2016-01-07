@@ -8,4 +8,5 @@
 module.exports = {
     Wrapper    : require('./lib/Wrapper')    ,
     FeedReader : require('./lib/FeedReader') ,
+    TimeUtils  : require('./lib/TimeUtils')  ,
 };
