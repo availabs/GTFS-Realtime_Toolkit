@@ -7,9 +7,9 @@
     "GTFS-Realtime"
   ],
   "dependencies": {
-    "lodash": "^3.10.1",
-    "moment-timezone": "^0.5.4",
-    "protobufjs": "^5.0.1"
+    "lodash": "3.10.1",
+    "moment-timezone": "0.5.4",
+    "protobufjs": "4.0.0"
   },
   "main": "index.js",
   "repository": {

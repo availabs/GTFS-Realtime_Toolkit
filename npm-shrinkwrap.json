@@ -22,10 +22,15 @@
       "from": "brace-expansion@>=1.0.0 <2.0.0",
       "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.4.tgz"
     },
+    "bufferview": {
+      "version": "1.0.1",
+      "from": "bufferview@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/bufferview/-/bufferview-1.0.1.tgz"
+    },
     "bytebuffer": {
-      "version": "5.0.1",
-      "from": "bytebuffer@>=5.0.0 <6.0.0",
-      "resolved": "https://registry.npmjs.org/bytebuffer/-/bytebuffer-5.0.1.tgz"
+      "version": "4.1.0",
+      "from": "bytebuffer@>=4.0.0 <5.0.0",
+      "resolved": "https://registry.npmjs.org/bytebuffer/-/bytebuffer-4.1.0.tgz"
     },
     "camelcase": {
       "version": "2.1.1",
@@ -89,13 +94,13 @@
     },
     "lodash": {
       "version": "3.10.1",
-      "from": "lodash@>=3.10.1 <4.0.0",
+      "from": "lodash@3.10.1",
       "resolved": "https://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz"
     },
     "long": {
-      "version": "3.1.0",
-      "from": "long@>=3.0.0 <4.0.0",
-      "resolved": "https://registry.npmjs.org/long/-/long-3.1.0.tgz"
+      "version": "2.4.0",
+      "from": "long@>=2.0.0 <3.0.0 >=2.3.0",
+      "resolved": "https://registry.npmjs.org/long/-/long-2.4.0.tgz"
     },
     "minimatch": {
       "version": "3.0.0",
@@ -109,7 +114,7 @@
     },
     "moment-timezone": {
       "version": "0.5.4",
-      "from": "moment-timezone@>=0.5.4 <0.6.0",
+      "from": "moment-timezone@0.5.4",
       "resolved": "https://registry.npmjs.org/moment-timezone/-/moment-timezone-0.5.4.tgz"
     },
     "number-is-nan": {
@@ -138,9 +143,9 @@
       "resolved": "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz"
     },
     "protobufjs": {
-      "version": "5.0.1",
-      "from": "protobufjs@>=5.0.1 <6.0.0",
-      "resolved": "https://registry.npmjs.org/protobufjs/-/protobufjs-5.0.1.tgz"
+      "version": "4.0.0",
+      "from": "protobufjs@4.0.0",
+      "resolved": "https://registry.npmjs.org/protobufjs/-/protobufjs-4.0.0.tgz"
     },
     "string-width": {
       "version": "1.0.1",
